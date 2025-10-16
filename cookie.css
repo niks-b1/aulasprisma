@@ -1,0 +1,10 @@
+#corpo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cookie{
+    width: 300px;
+    border-radius: 100%;
+}
