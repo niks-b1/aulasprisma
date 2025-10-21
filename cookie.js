@@ -1,9 +1,11 @@
-let botao = document.getElementById("cookie")
+let cookie = document.getElementById("imagem")
 let contador = document.getElementById("contador")
-let numero = 0
+let numero = localStorage.getItem("numero")
 
+contador.innerText = numero + " cookies"
 
-botao.addEventListener("click", () => {
+cookie.addEventListener("click", () => {
     numero++
-    contador.innerText = numero
+    localStorage.setItem("numero", numero)
+    contador.innerText = numero + " cookies"
 })
